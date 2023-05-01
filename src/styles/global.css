@@ -1,28 +1,28 @@
 /*import des polices*/
 @font-face{
   font-family: 'Rubik Regular';
-  src: url(/src/fonts/Rubik/Rubik-Regular.ttf) format('truetype');
+  src: url(/public/fonts/Rubik/Rubik-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Rubik Italic';
-  src: url(/src/fonts/Rubik/Rubik-Italic.ttf) format('truetype');
+  src: url(/public/fonts/Rubik/Rubik-Italic.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Rubik-VariableFont';
-  src: url(src/fonts/Rubik/Rubik-VariableFont.ttf) format('truetype');
+  src: url(/public/fonts/Rubik/Rubik-VariableFont.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Rubik Mono One';
-  src: url(/src/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf) format('truetype');
+  src: url(/public/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Nadira';
-  src: url(/src/fonts/Nadira/NF-Nadira-Pro-Regular.ttf) format('truetype'),
-  url(/src/fonts/Nadira/NF-Nadira-Pro-Regular.woff) format('woff');
+  src: url(/public/fonts/Nadira/NF-Nadira-Pro-Regular.ttf) format('truetype'),
+  url(/public/fonts/Nadira/NF-Nadira-Pro-Regular.woff) format('woff');
 }
 
 /*reset css*/
