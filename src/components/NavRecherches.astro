@@ -1,0 +1,35 @@
+<div class="home-menu">
+  <a href="src/pages/recherches.astro"><span class="highlight">Publications</span></a>
+  <a href="src/pages/interventions.astro"><span class="highlight">Interventions et conférences</span></a>
+</div>
+
+<style>
+  .home-menu{
+    grid-area: navmenu;
+
+    margin: auto 2% 2% 2%;
+    display: flex;
+    gap: 3em;
+  }
+
+  a{
+    font-family: 'Nadira';
+    font-size: 1.3rem;
+  }
+  .highlight{
+    position: relative;
+  }
+
+  .highlight:hover::before{
+    position: absolute;
+    background-color: rgba(255, 232, 0, 1);
+    content: "";
+    height: 30%;
+    top: 30%;
+    left: -0.3em;
+    width: 110%;
+    transform: skew(40deg);
+    z-index: -2;
+  }
+
+</style>

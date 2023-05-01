@@ -1,0 +1,77 @@
+/*import des polices*/
+@font-face{
+  font-family: 'Rubik Regular';
+  src: url(/src/fonts/Rubik/Rubik-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik Italic';
+  src: url(/src/fonts/Rubik/Rubik-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik-VariableFont';
+  src: url(src/fonts/Rubik/Rubik-VariableFont.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik Mono One';
+  src: url(/src/fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nadira';
+  src: url(/src/fonts/Nadira/NF-Nadira-Pro-Regular.ttf) format('truetype'),
+  url(/src/fonts/Nadira/NF-Nadira-Pro-Regular.woff) format('woff');
+}
+
+/*reset css*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*general css*/
+p{
+  font-family: 'Rubik Regular';
+  font-size: 1em;
+  text-align: justify;
+}
+
+h1 {
+  /*background-image: url('../img/trametitre.jpeg');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;*/
+  font-family: 'Rubik Mono One';
+  text-shadow: 10px 11px 2px rgba(37,37,37,0.2);
+}
+
+h2 {
+  font-family: 'Nadira';
+}
+a {
+  font-family: 'Rubik Regular';
+  text-decoration: none;
+  color: unset;
+}
+
+ol,ul {
+  list-style:none;
+}
+
+
+.contenu{
+  grid-area: contenu;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+/*en-tête page*/
+.titre-page{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}

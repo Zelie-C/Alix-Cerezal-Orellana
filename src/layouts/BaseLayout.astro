@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import Header from "../components/Header.astro";
+const { pageTitle } = Astro.props;
+---
+
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+    <div class="container">
+      <Header />
+        <div class="contenu">
+          <slot />
+        </div>
+        <Navigation />
+    </div>
+	</body>
+</html>
+
+<style>
+    .container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header header"
+  "nav contenu contenu contenu"
+  "nav contenu contenu contenu"
+  "nav contenu contenu contenu"
+  ;
+}
+</style>

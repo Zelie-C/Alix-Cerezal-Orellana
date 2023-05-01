@@ -1,0 +1,163 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Graphisme"
+---
+<BaseLayout pageTitle={pageTitle}>
+  <div class="graphisme-enso">
+    <img src="src/img/graphisme/logo-entrenous.jpg" alt="Logo Entrenous Solidarité" class="img">
+    <img src="src/img/graphisme/logo-entrenous-rs.jpg" alt="Logo Entrenous Solidarité Réseaux Sociaux" class="img-droite">
+    <p class="description">Conception de l'identité visuelle de Entrenous Solidarité, association d'entraide communautaire
+    à visée de femmes étrangères précaires, pour leur insertion sociale et leur réussite professionnelle.</p>
+  </div>
+  <div class="graphisme-grillages">
+    <img src="src/img/graphisme/pince-simple.jpg" alt="Pince Monseigneur" class='img2'>
+    <img src="src/img/graphisme/les-grillages-texture.jpg" alt="Éditions les Grillages police tramée" class="img-bandeau">
+    <img src="src/img/graphisme/logo-grillages.jpg" alt="Logo Éditions les Grillages" class="img-droite2">
+    <p class="description2">Travail d'après l'identité visuelle existente de la maison d'édition Les Grillages pour renouveler ses visuels.</p>
+  </div>
+  <div class="graphisme-anthologie">
+    <img src="src/img/graphisme/couv-altfem1.jpg" alt="Couverture de l'anthologie transfem #1 paru aux Éditions Les Grillages">
+    <img src="src/img/graphisme/anim-briquet-altfem-fond-violet.gif" alt="Animation du logo du collectif AltFem">
+    <p>Conception de la couverture de l'Anthologie Transfem #1 : Ecrire pour les sœurs, par AltFem et Les Grillages.
+    Création d'une animation .gif d'après un dessin de Ludivine Manhès</p>
+  </div>
+  <div class="graphisme-guide">
+    <img src="src/img/graphisme/1.jpg" alt="Logo Suivez la guide" id="blanc">
+    <img src="src/img/graphisme/4.jpg" alt="Variation du logo Suivez la guide" id="vert">
+    <img src="src/img/graphisme/6.jpg" alt="Variation du logo Suivez la guide" id="orange">
+    <img src="src/img/graphisme/7.jpg" alt="Variation du logo Suivez la guide" id="bleu">
+    <img src="src/img/graphisme/8.jpg" alt="Variation du logo Suivez la guide" id="violet">
+    <p class="description3">Conception d'une identité visuelle pour Andrea Cerezal Orellana, guide-conférencière ayant pour territoire la moyenne montagne et les pays de Savoie</p>
+  </div>
+  <div class="graphisme-deviations">
+    <img src="src/img/graphisme/transfleches.jpg" alt="Texture transflèches" id="texture">
+    <img src="src/img/graphisme/logo-deviations.jpg" alt="Logo Déviations" id="logo">
+    <img src="src/img/graphisme/lettrine-d.jpg" alt="Lettrine D avec flèche" id="lettrine">
+    <p class="description4">Conception de l'identité visuelle de l'association d'entraide communautaire Déviations, qui vise à créer de la solidarité entre personnes déviantes de genre.</p>
+  </div>
+  <div class="graphisme-couverture">
+    <img src="src/img/graphisme/revuepd-couvertyre.jpg" alt="Couverture PD La Revue #3 - (Ef)féminités" id="couverture">
+    <p>Couverture du numéro 3 de PD La Revue <br> <br>
+    Aquarelle, linogravure et dessin digital</p>
+  </div>
+  <div class="graphisme-couverture">
+    <img src="src/img/graphisme/free-cece-poster.jpg" alt="Affiche Projection FreeCeCe">
+    <p>Affiche pour la projection du film Free CeCe <br> <br>
+    par Jac Gares et Laverne Cox</p>
+  </div>
+  <div class="graphisme-couverture">
+    <img src="src/img/graphisme/affiche-vernissage-prototype.jpg" alt="Affiche pour le vernissage de l'exposition Queermess">
+    <p>Affiche pour le vernissage de l'exposition Queermess</p>
+  </div>
+</BaseLayout>
+
+<style>
+  .graphisme-enso{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr, 0.5fr, 1fr;
+    gap: 1em;
+    margin-bottom: 3em;
+  }
+  .description{
+    grid-area: 2 / 1 / 3 / 5;
+  }
+  .img{
+    grid-area: 1 / 1 / 2 / 4;
+  }
+  .img-droite{
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .graphisme-grillages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr, 0.5fr, 1fr;
+    margin-bottom: 3em;
+    gap: 1em;
+  }
+  .img2{
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .img-bandeau{
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .img-droite2{
+    grid-area: 1 / 4 / 3 / 6;
+    width: 100%;
+  }
+  .description2{
+    grid-area: 3 / 1 / 4 / 6;
+  }
+  .graphisme-anthologie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1em;
+    margin-bottom: 3em;
+  }
+  /* Mise en forme partie graphisme guide*/
+  .graphisme-guide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.2fr;
+    column-gap: 2em;
+    row-gap: 1.5em;
+    margin-bottom: 3em;
+  }
+  #blanc{
+    width: 100%;
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  #vert{
+    width: 100%;
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  #violet{
+    width: 100%;
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  #orange{
+    width: 100%;
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  #bleu{
+    width: 100%;
+    grid-area: 2 / 4 / 3 / 5;
+  }
+  .description3{
+    grid-area: 3 / 1 / 4 / 5;
+  }
+  /* Mise en forme partie graphisme déviations*/
+  .graphisme-deviations{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 0.2fr;
+    gap: 1em;
+    margin-bottom: 3em;
+  }
+  #texture{
+    width: 100%;
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  #logo{
+    width: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  #lettrine{
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .description4{
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  /* Mise en forme graphisme PD La Revue / Free CeCe / Affiche QueerMess */
+  .graphisme-couverture{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+    gap: 1em;
+  }
+</style>

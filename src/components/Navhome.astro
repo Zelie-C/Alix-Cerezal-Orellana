@@ -1,0 +1,49 @@
+<div class="home-menu">
+  <div class="element">
+    <div class="back"></div>
+    <a href="../src/pages/index.astro"><span class="highlight">Statement</span></a>
+  </div>
+  <div class="element">
+    <a href="../src/pages/info/education.astro"><span class="highlight">Éducation</span></a>
+  </div>
+  <div class="element">
+    <a href="../src/pages/info/expositions.astro"><span class="highlight">Expositions</span></a>
+  </div>
+  <div class="element">
+    <a href="../src/pages/info/spectacles.astro"><span class="highlight">Spectacles</span></a>
+  </div>
+  <div class="element">
+    <a href="../src/pages/info/residences.astro"><span class="highlight">Résidences</span></a>
+  </div>
+</div>
+
+<style>
+  .home-menu{
+    grid-area: navmenu;
+    margin: auto 2% 2em 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a{
+    font-family: 'Nadira';
+    font-size: 1.3rem;
+  }
+
+  .highlight{
+    position: relative;
+  }
+
+  .highlight:hover::before{
+    position: absolute;
+    background-color: rgba(255, 232, 0, 1);
+    content: "";
+    height: 30%;
+    top: 30%;
+    left: -0.3em;
+    width: 110%;
+    transform: skew(40deg);
+    z-index: -2;
+  }
+
+</style>

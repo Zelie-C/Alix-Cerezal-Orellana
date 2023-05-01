@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Ateliers";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="atelier">
+    <img src="src/img/cnac-magasin-2023/materiel-atelier.jpg" alt="Matériel utilisé lors d'un des ateliers" class="image1">
+    <p class="description-atelier">Cycle d’ateliers jeune public vacances scolaires février 2023 autour de l’exposition La Position de l’Amour
+      Centre National d'Art Contemporain Le MAGASIN, Grenoble (38)
+      2023</p>
+    <img src="src/img/cnac-magasin-2023/cyanotype.jpg" alt="Photo d'un rinçage de cyanotype" class="image2">
+    <img src="src/img/cnac-magasin-2023/ensemble-verriere.jpg" alt="Photo d'ensemble lors d'un atelier" class="image3">
+    <img src="src/img/cnac-magasin-2023/lecture.jpg" alt="Photo d'une des lectures costumées" class="image4">
+  </div>
+    <div class="atelier">
+      <img src="src/img/atelierwallon/henriwallon.jpg" alt="photo vernissage" class="image1"/>
+      <p class="description-atelier">Histoires de Fanzines, interventions artistiques auprès de classes de 4ème au collège Henri Wallon à Saint-Martin-d’Hères (38) <br>
+        2022</p>
+        <img src="src/img/atelierwallon/exemplefanzine1.jpg" alt="photo d'un fanzine" class="image2"/>
+        <img src="src/img/atelierwallon/exemplefanzine2.jpg" alt="photo d'un autre fanzine" class="image3"/>
+        <img src="src/img/atelierwallon/affichevernissageartspla.jpeg" alt="Affiche Vernissage" class="image4"/>
+    </div>
+      <div class="atelier">
+        <img src="src/img/rassemblement7/maquillage-enfanzine.jpg" alt="Préparation à un maquillage" class="image1">
+        <p class="description-atelier">Assistance à l'association Enfanzine et stand de maquillage pailleté lors du Grand Rassemblement 7 au Rabot, Grenoble (38) <br>
+        2022</p>
+        <img src="src/img/rassemblement7/maquillage.jpg" alt="Maquillage en cours de réalisation" class="image2-etendue">
+        <img src="src/img/rassemblement7/vue-ensemble.jpg" alt="Vue d'ensemble de l'atelier" class="image4">
+      </div>
+        <div class="atelier">
+          <img src="src/img/martine-se-rebelle/materiel.jpg" alt="Matériel utilisé pendant l'atelier" class="image1-alt">
+          <img src="src/img/martine-se-rebelle/fanzine.jpg" alt="Exemple de fanzine réalisé lors de l'atelier" class="image1-bis">
+          <p class="description-atelier">Atelier jeune public Martine se rebelle, en partenariat avec la ville de Lyon 7 dans le cadre de la Marche des Fiertés (69) <br>
+          2022</p>
+          <img src="src/img/martine-se-rebelle/fanzine1.jpg" alt="Autre exemple de fanzine réalisé lors de l'atelier" class="image2">
+          <img src="src/img/martine-se-rebelle/affichage.jpg" alt="Fanzines accrochés sur des grilles" class="image3">
+          <img src="src/img/martine-se-rebelle/martine-se-rebelle.jpg" alt="Affiche de l'atelier Martine se rebelle" class="image4">
+        </div>
+          <div class="atelier">
+            <img src="src/img/lesbuttes/fabrication.jpg" alt="Fabrication fanzine" class="image1">
+            <p class="description-atelier">Intervention à l'école primaire Les Buttes à la Villeneuve, avec la Maison d'Edition d'Idées, Grenoble (38) <br>
+              2019</p>
+            <img src="src/img/lesbuttes/lecture.jpg" alt="Lecture aux enfants" class="image2-etendue">
+            <img src="src/img/lesbuttes/ensemble.jpg" alt="" class="image4">
+          </div>
+            <div class="atelier">
+              <img src="src/img/villeneuve-plage/optimiste.jpg" alt="" class="image1-etendue">
+              <p class="description-atelier">Atelier Aqualivre pour le festival Villeneuve-Plage, avec la Maison d'Edition d'Idées, Grenoble (38) <br>
+                2019</p>
+              <img src="src/img/villeneuve-plage/lecture-optimiste.jpg" alt="Lecture aux enfants depuis un optimiste" class="image4">
+            </div>
+</BaseLayout>
+
+<style>
+/*grid pour mettre en forme les photos de chaque atelier*/
+.atelier{
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  padding: 1em;
+  margin-bottom: 2em;
+  /*Rond jaune en background*/
+  /*border: 0.1em solid rgba(255, 232, 0, 1);
+  border-radius: 60%;
+  background-color: rgba(255, 232, 0, 1);*/
+}
+.image1 {
+  max-width: 100%;
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.description-atelier{
+  text-align: justify;
+  grid-area: 1 / 3 / 2 / 5;
+  align-self: center;
+}
+.image2 {
+  max-width: 100%;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.image3{
+  max-width: 100%;
+  grid-area: 3 / 2 / 4 / 3;
+}
+.image4 {
+  max-width: 100%;
+  grid-area: 2 / 3 / 4 / 5;
+}
+/*grid avec image 2 étendue*/
+.image2-etendue {
+  max-width: 100%;
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+/*grid avec deux images à la place d'une seule en image 1*/
+.image1-alt{
+  max-width: 100%;
+  grid-area: 1 / 1 / 3 / 2;
+}
+.image1-bis{
+  max-width: 100%;
+  grid-area: 1 / 2 / 3 / 3;
+}
+/*grid avec image 1 très étendue*/
+.image1-etendue{
+  max-width: 100%;
+  grid-area: 1 / 1 / 4 / 3;
+}
+
+</style>

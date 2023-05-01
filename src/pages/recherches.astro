@@ -1,0 +1,53 @@
+---
+import BaseLayoutRecherches from "../layouts/BaseLayoutRecherches.astro";
+const pageTitle = "Publications"
+---
+<BaseLayoutRecherches pageTitle={pageTitle}>
+  <div class="camp">
+    <img src="src/img/editions/couverture-camp.jpg" alt="Couverture À Propos du Camp Français" class="couv">
+    <p class="caracteristiques">A propos du Camp Français, s'il en est : <br>
+    In/visibilités des déviances de genre dans la culture visuelle française récente <br>
+    Editions Les Grillages <br>
+    2021 <br>
+    176p.</p>
+    <p class="resume">Initié par le besoin d'auto-identification et de connexion à une culture qui est traditionnellement
+      semi-obscure, ce mémoire se concentre sur le sujet du « camp » comme forme de sensibilité queer,
+      pour essayer d’établir un panorama des déviances de genre dans la culture française récente. <br>
+      <br>
+      À travers un processus approfondi de recherche et de mobilisation de l'expérience vécue, il explore
+      les relations étroites entre l'art et l'activisme, et comment les normes sociales et la répression
+      de la diversité des genres se traduisent dans certaines formes d'art. Analysant les liens entre la
+      performance et la performativité du genre, ce mémoire traite des identités marginalisées qui constituent
+      le noyau de la culture queer : folles, butchs, trans, travestis ... Cependant, les limites de cette
+      sensibilité sont également examinées, en particulier leur propension au sexisme et leurs dimensions
+      colonialistes. <br>
+      <br>
+      Ce mémoire comprend des traductions originales auxquelles le texte fait référence, ainsi que des
+      analyses de films et de chansons, afin de mettre en lumière des formes de culture qui sont considérées
+      comme moindres, mais qui constituent de fait une sorte d'héritage, et permettent de mener une plus
+      grande critique des politiques identitaires et de la représentation médiatique queer.</p>
+  </div>
+</BaseLayoutRecherches>
+
+<style>
+.camp{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  grid-template-areas:
+  "couv caracteristiques"
+  "resume resume";
+}
+.couv{
+  grid-area: couv;
+  max-width: 100%;
+}
+.caracteristiques{
+  grid-area: caracteristiques;
+  align-self: center;
+}
+.resume{
+  grid-area: resume;
+}
+</style>

@@ -1,0 +1,69 @@
+---
+import BaseLayoutAbout from "../../layouts/BaseLayoutAbout.astro";
+const pageTitle = "À Propos"
+---
+  <BaseLayoutAbout pageTitle={pageTitle}>
+    <div class="bio">
+      <img src="../src/img/photoalix.jpg" alt="photo alix cerezal orellana" id="photo-bio"/>
+      <p id="statement">Diplômé de l'Ecole Supérieure d'Art et Design de Grenoble en 2021,
+        Alix Cerezal Orellana se définit comme un artiste factotum. C'est à travers
+        des médiums toujours renouvelés - performance, recherche scientifique, vidéo,
+        édition, ateliers de transmission - qu'il cherche à mettre en lumière la
+        multiplicités des façons d'être, à créer de nouveaux récits de soi et à apprendre
+        ceux de nos ami-e-s du passé. Son travail célèbre la créativité de genre comme
+        une démarche engagée et spontanée, vers une révolution chatoyante, un carnaval
+        perpétuel.
+      </p>
+        <div id="ressources-pdf">
+          <p class="titre-pdf">CV</p>
+          <div class="pdf"><a href="../src/img/cv.pdf"><img src="../src/img/downloadlogo.jpg" alt="download"></a></div>
+          <p class="titre-pdf">Portfolio</p>
+          <div class="pdf"><a href="../src/img/portfolio.pdf"><img src="../src/img/downloadlogo.jpg" alt="download"></a></div>
+        </div>
+          <div id="foucault">
+            <p>"Si nous devons nous situer par rapport à la question de l'identité, ce doit être en tant que nous sommes des êtres uniques.
+            Mais les rapports que nous devons entretenir avec nous-mêmes ne sont pas des rapports d'identité ; ils doivent être plutôt des
+            rapports de différenciation, de création, d'innovation. C'est très fastidieux d'être toujours le même."
+            </p>
+            <p class="citation"><span class="italic">Dits et Ecrits II</span>, 1976-1988, Michel Foucault, Gallimard, 2001, p.1558.</p>
+          </div>
+    </div>
+  </BaseLayoutAbout>
+
+<style>
+
+#statement{
+  min-width: 20%;
+  max-width: 50%;
+}
+
+.italic{
+  font-family: 'Rubik Italic';
+}
+
+#ressources-pdf{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.citation{
+  text-align: right;
+}
+
+.bio{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+#photo-bio{
+  max-height: 300px;
+}
+
+#foucault{
+  margin-top: 1em;
+}
+</style>

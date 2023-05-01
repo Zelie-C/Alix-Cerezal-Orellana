@@ -1,0 +1,54 @@
+---
+import BaseLayoutAbout from "../../layouts/BaseLayoutAbout.astro";
+const pageTitle = "Spectacles"
+---
+<BaseLayoutAbout pageTitle={pageTitle}>
+  <div class="double-colonne">
+    <div class="colonne">
+      <p>GLAM Against The Machine, édition digitale <br>
+      Performance et animation <br>
+      Mai et Octobre 2020 <br>
+      <br>
+      Cabaroké, soirée interlope, Grenoble <br>
+      Montage du spectacle et performance <br>
+      Musée de la Résistance et de la Déportation de l'Isère <br>
+      Février 2020 <br>
+      <br>
+      La Salve, cabaret au Nid de Poule, Lyon <br>
+      Performance <br>
+      Septembre 2019 <br>
+      <br>
+      OUTRAGE, spectacle drag, Lyon <br>
+      Performance <br>
+      Août 2019</p>
+    </div>
+    <div class="colonne">
+      <p>Bingo Drag à la Belle Electrique, Grenoble <br>
+        Performance <br>
+        Juin 2019 <br>
+        <br>
+        Festival Badasstéroides, Grenoble <br>
+        Performance <br>
+        Juin 2019 <br>
+        <br>
+        Queens and Kings à La Cata, Grenoble <br>
+        Animation d'atelier et performance <br>
+        Avril 2019 <br>
+        <br>
+        Gode Save the Queer, en collaboration avec l'association Le Refuge, Grenoble <br>
+        Performance <br>
+        Avril 2019 <br>
+        </p>
+    </div>
+  </div>
+</BaseLayoutAbout>
+
+<style>
+.double-colonne{
+  display: flex;
+  justify-content: space-between;
+}
+.colonne{
+  max-width: 45%;
+}
+</style>

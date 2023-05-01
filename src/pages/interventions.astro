@@ -1,0 +1,90 @@
+---
+import BaseLayoutRecherches from "../layouts/BaseLayoutRecherches.astro";
+const pageTitle = "Interventions"
+---
+<BaseLayoutRecherches pageTitle={pageTitle}>
+<div class="interventions">
+  <div class="intervention">
+    <img src="src/img/interventions/zinestransfags.jpg" alt="Arrêt sur image de l'intervention sur le zine Unapologetic" class="illustration">
+    <p class="description">Séminaire Emergences Queer, Paris 8 <br>
+    Journée "Archives trans pédées : la création d'espaces communautaires depuis Lou Sullivan" <br>
+    Janvier 2021 <br>
+    <br>
+    Intervention filmée, vidéo à la demande</p>
+  </div>
+    <div class="intervention">
+      <img src="src/img/interventions/troubletongenre.jpg" alt="Capture d'écran de la conférence" class="illustration">
+      <p class="description">Festival Trouble ton Genre, campus universitaire de Grenoble <br>
+        Conférence "Genre et Espace public" <br>
+        Mars 2020 <br>
+        <br>
+        Intervention filmée, vidéo à la demande</p>
+    </div>
+      <div class="intervention2">
+        <img src="src/img/interventions/doctiphilo.jpg" alt="Affiche de la conférence Doctiphilo" class="illustration2">
+        <p class="description2">Doctiphilo, campus universitaire de Grenoble <br>
+          Conférence "Déconstruisons le genre" <br>
+          Décembre 2019</p>
+        <img src="src/img/interventions/festival-des-merveilles.jpg" alt="Affiche du Festival des Merveilles" class="illustration3">
+        <p class="description3">Festival des Merveilles, Paris <br>
+          Conférence "Etre trans en province" <br>
+          Octobre 2019</p>
+      </div>
+    <div class="intervention2">
+      <img src="src/img/interventions/maison-image.jpg" alt="Affiche Conférence Maison de l'Image" class="illustration2">
+      <p class="description2">Rendez-Vous de l'Image, Maison de l'Image de Grenoble <br>
+        Conférence "Grandir et s'épanouir lorsque l'on n'est pas fille ou garçon" <br>
+        Mars 2019</p>
+      <img src="src/img/interventions/epistemologie-sexualite.jpg" alt="Capture d'écran de la conférence Épistémologie de ma sexualité" class="illustration3">
+      <p class="description3">Conférence performée Épistémologie de ma Sexualité <br> à l'ESAD Grenoble <br>
+        Février 2018</p>
+    </div>
+</div>
+</BaseLayoutRecherches>
+
+<style>
+/* grid simple en deux colonnes simples*/
+  .intervention{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    margin-bottom: 1em;
+  }
+  .illustration{
+    max-width: 100%;
+  }
+  .description{
+    align-self: center;
+  }
+/* grid imbriqué*/
+  .intervention2{
+    margin-bottom: 1em;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "illustration2 illustration2 description2 description2 description2"
+    "illustration2 illustration2 description3 description3 description3"
+    "illustration2 illustration2 illustration3 illustration3 illustration3"
+    "illustration2 illustration2 illustration3 illustration3 illustration3"
+    "illustration2 illustration2 illustration3 illustration3 illustration3";
+  }
+  .illustration2{
+    grid-area: illustration2;
+    max-width: 100%;
+  }
+  .description2{
+    grid-area: description2;
+    align-self: flex-end;
+  }
+  .illustration3{
+    grid-area: illustration3;
+    max-width: 100%;
+  }
+  .description3{
+    grid-area: description3;
+    align-self: flex-end;
+    text-align: center;
+  }
+</style>

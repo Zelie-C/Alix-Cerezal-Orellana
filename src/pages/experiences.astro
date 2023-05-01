@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Expériences";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <div class="double-colonne">
+    <img src="src/img/experiences/linogravure.jpg" alt="Tirage d'une linogravure" class="img">
+    <p>Linogravure d'une carte de vœux pour la nouvelle année 2023</p>
+  </div>
+  <div class="double-colonne">
+    <img src="src/img/experiences/IMG_4985.jpg" alt="Photo nailart" class="img">
+    <img src="src/img/experiences/IMG_5951.jpg" alt="Photo nailart" class="img">
+  </div>
+</BaseLayout>
+
+<style>
+  .double-colonne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3em;
+    column-gap: 1em;
+  }
+  .img{
+    width: 50%;
+  }
+</style>
