@@ -1,17 +1,3 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-      { "source": "/interventions/index.html", "destination": "/interventions.html" },
-      { "source": "/enseignement/index.html", "destination": "/enseignement.html" },
-      { "source": "/recherches/index.html", "destination": "/recherches.html"},
-      { "source": "/graphisme/index.html", "destination": "/graphisme.html"},
-      { "source": "/ateliers/index.html", "destination": "/ateliers.html"},
-      { "source": "/editions/index.html", "destination": "/editions.html"},
-      { "source": "/videos/index.html", "destination": "/videos.html"},
-      { "source": "/info/expositions/index.html", "destination": "/info/expositions.html"},
-      { "source": "/info/residences/index.html", "destination": "/info/residences.html"},
-      { "source": "/info/spectacles/index.html", "destination": "/info/spectacles.html"},
-      { "source": "/info/education/index.html", "destination": "/info/education.html"},
-      { "source": "/info/info/index.html", "destination": "/info/info.html"}
-    ]
+  "cleanUrls": true
 }
