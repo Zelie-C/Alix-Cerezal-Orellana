@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    output: 'static',
-    built: {format: 'file'}
+    site: 'https://zelie-c.github.io',
+    base: '/alix-cerezal-orellana',
 
 });
